@@ -1,0 +1,23 @@
+.warning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning__heading,
+.warning__text {
+  text-align: center;
+  color: var(--primary);
+}
+
+.warning__heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.warning__text {
+  max-width: 75%;
+}

@@ -20,8 +20,8 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
   /* Uncomment when working with breakpoints */
   /* border: 1px solid red; */
 }

@@ -7,6 +7,40 @@
     <title>Vite App</title>
   </head>
   <body>
+    <header class="header container">
+      <div class="header__logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          viewBox="0 -960 960 960"
+          width="32"
+        >
+          <path
+            d="M480-80q-116 0-198-82t-82-198v-240q0-116 82-198t198-82q116 0 198 82t82 198v240q0 116-82 198T480-80Zm40-520h160q0-72-45.5-127T520-796v196Zm-240 0h160v-196q-69 14-114.5 69T280-600Zm200 440q83 0 141.5-58.5T680-360v-160H280v160q0 83 58.5 141.5T480-160Zm0-360Zm40-80Zm-80 0Zm40 80Z"
+          />
+        </svg>
+        <a href="#" class="logo__name">MouseTrack</a>
+      </div>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="#" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Attributions</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="warning container">
+      <p class="warning__heading">WARNING!</p>
+      <p class="warning__text">
+        If you see a mouse event rate matching your display Hz, the web browser
+        is likely collapsing several real mouse events into one faked mouse
+        event! UPDATE: Chrome 60+ does this!
+      </p>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

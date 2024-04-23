@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 1rem;
+  padding: 2rem 3rem;
+  margin-bottom: 4rem;
+  -webkit-backdrop-filter: saturate(180%) blur(20px); /* Fixes blur for safari */
+  backdrop-filter: saturate(180%) blur(20px);
+  z-index: 100;
+  border-radius: 50px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.header__logo .logo__name {
+  color: var(--text);
+  font-size: var(--size-base);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 2em;
+  font-size: var(--size-base);
+  font-weight: 600;
+}
+
+.header__link,
+.logo__name {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.header__link:hover {
+  color: var(--accent);
+  text-decoration: underline var(--accent) 3px;
+  text-underline-offset: 6px;
+}
