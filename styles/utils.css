@@ -27,7 +27,15 @@
 }
 
 .section {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.accent__heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: var(--primary);
 }
 
 /* xs */
@@ -55,10 +63,6 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-
-  .section {
-    margin-top: 10rem;
   }
 }
 

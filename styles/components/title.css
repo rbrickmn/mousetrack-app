@@ -1,0 +1,9 @@
+.title__heading,
+.title__text {
+  color: var(--text);
+}
+
+.title__heading {
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 0.5rem;
+}
