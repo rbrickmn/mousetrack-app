@@ -46,20 +46,48 @@
       </div>
 
       <section class="title__section container section">
-        <h1 class="title__heading">Mouse Performance Test</h1>
+        <h1 class="title__heading">Mouse Input Performance Test</h1>
         <p class="title__text">
           A basic HTML/CSS/JavaScript tool to test your mouse response time.
         </p>
       </section>
 
       <section class="instructions__section container section">
-        <p class="instructions__heading accent__heading title__heading">INSTRUCTIONS</p>
+        <p class="instructions__heading accent__heading title__heading">
+          INSTRUCTIONS
+        </p>
         <p class="instructions__text">
           Continuously move the mouse around in the area below. The difference
           between hardware cursor (mouse pointer) and last recorded mouse
           position (red box) is mouse input lag. The red circle represents “two
           frames” of input lag.
         </p>
+      </section>
+
+      <section class="container section">
+        <div class="app__settings">
+          <form action="POST" class="settings__form">
+            <input type="checkbox" name="" id="wanthardwarecursor" checked/>
+            <label for="wanthardwarecursor">Show hardware cursor</label>
+
+            <input type="checkbox" name="" id="useraftime" checked/>
+            <label for="useraftime">Use rAF time argument</label>
+
+            <input type="checkbox" name="" id="wantgraph" checked/>
+            <label for="wantgraph">Graph</label>
+
+            <input type="checkbox" name="" id="wanteventnow" checked/>
+            <label for="wanteventnow">Override event time with now()</label>
+
+            <input type="checkbox" name="" id="wantmousepath" />
+            <label for="wantmousepath">Show mouse path</label>
+          </form>
+        </div>
+
+        <div class="app__main">
+          <div class="app__window"></div>
+          <div class="app__instructions"></div>
+        </div>
       </section>
     </main>
 
