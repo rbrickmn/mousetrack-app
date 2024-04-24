@@ -1,0 +1,9 @@
+.hand {
+  cursor: pointer;
+}
+
+.grayborder {
+  border-color: #808080;
+  border-width: 1px;
+  border-style: solid;
+}
