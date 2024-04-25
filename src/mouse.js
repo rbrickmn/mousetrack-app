@@ -11,12 +11,13 @@
   let info = "";
   const perf = window.performance;
 
+  //--------------------------------------------------------------------------------
   const tick = () => perf.now();
-
+  //--------------------------------------------------------------------------------
   const onMouseMove = (e) => {
     onMove(e.timeStamp, e.clientX, e.clientY);
   };
-
+  //--------------------------------------------------------------------------------
   const onTouchMove = (e) => {
     e.preventDefault();
     const touches = e.changedTouches;
@@ -25,7 +26,7 @@
       onMove(e.timeStamp, t.clientX, t.clientY);
     }
   };
-
+  //--------------------------------------------------------------------------------
   const onMove = (ets, clientX, clientY) => {
     const ts = elWantEventNow.checked ? tick() : ets;
     info = "average small delta=" + getAve().toFixed(2) + "ms";
@@ -38,7 +39,7 @@
       a.shift();
     }
   };
-
+  //--------------------------------------------------------------------------------
   const getAve = () => {
     let dsum = 0;
     let dnum = 0;
@@ -51,7 +52,7 @@
     }
     return dnum ? dsum / dnum : 0;
   };
-
+  //--------------------------------------------------------------------------------
   const getMouseDistance = (ms) => {
     const now = tick();
     let l1 = a.length - 1;
@@ -69,6 +70,7 @@
     return { x: 0, y: 0 };
   };
 
+  //--------------------------------------------------------------------------------
   const animate = (tAnimate) => {
     const prev = tLastAnimate;
     tLastAnimate = elUseRAFTime.checked ? tAnimate : tick();
@@ -85,7 +87,7 @@
 
     // info line at top
     ctx.fillStyle = "#333333";
-    ctx.font = "16px Poppins";
+    ctx.font = "14px Poppins";
     ctx.textAlign = "left";
     ctx.fillText(
       a.length > 3
@@ -174,14 +176,14 @@
       }
     }
   };
-
+  //--------------------------------------------------------------------------------
   const doHardwareCursorWork = () => {
     const hwWant = elHardwareCursor.checked ? "auto" : "none";
     if (hwWant != can.style.cursor) {
       can.style.cursor = hwWant;
     }
   };
-
+  //--------------------------------------------------------------------------------
   const init = () => {
     can.addEventListener("mousemove", onMouseMove, false);
     can.addEventListener("touchmove", onTouchMove, true);
