@@ -112,6 +112,11 @@ svg {
   user-select: none;
 }
 
+canvas {
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+}
+
 button {
   display: inline-block;
   padding: 0;

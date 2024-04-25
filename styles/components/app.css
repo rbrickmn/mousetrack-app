@@ -1,9 +1,23 @@
-.hand {
-  cursor: pointer;
+.app__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.grayborder {
-  border-color: #808080;
-  border-width: 1px;
-  border-style: solid;
+.app__window {
+  max-width: 100%;
+}
+
+.app__instructions {
+  max-width: 20%;
+  align-self: center;
+}
+
+.app__highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.instructions__text {
+  margin-bottom: 0.5rem;
 }
