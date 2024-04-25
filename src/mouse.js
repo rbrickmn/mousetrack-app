@@ -87,7 +87,7 @@
 
     // info line at top
     ctx.fillStyle = "#333333";
-    ctx.font = "14px Poppins";
+    ctx.font = "16px Poppins";
     ctx.textAlign = "left";
     ctx.fillText(
       a.length > 3
