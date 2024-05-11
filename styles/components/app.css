@@ -1,16 +1,7 @@
 .app__main {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.app__window {
-  max-width: 100%;
-}
-
-.app__instructions {
-  max-width: 20%;
-  align-self: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .app__highlight {
@@ -22,35 +13,36 @@
   margin-bottom: 0.5rem;
 }
 
+.app__instructions {
+  margin-top: 1rem;
+  max-width: 100%;
+  align-self: auto;
+}
+
+.app__window {
+  max-width: 85%;
+}
+
 /* xs */
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+}
 
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+}
 
 /* md */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* lg */
 @media (min-width: 1024px) {
-  .app__main {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .app__instructions {
-    margin-top: 1rem;
-    max-width: 100%;
-    align-self: auto;
-  }
-
-  .app__window {
-    max-width: 85%;
-  }
 }
 
 /* xl */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+}
 
 /* 2xl */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+}
