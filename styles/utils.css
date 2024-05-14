@@ -38,10 +38,30 @@
   color: var(--primary);
 }
 
+.mobile__hidden {
+  display: none;
+  text-align: center;
+}
+
+.warning__icon {
+  margin: 1.5rem auto;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
+  }
+
+  .mobile__hidden {
+    display: block;
+  }
+
+  .warning,
+  .title__section,
+  .instructions__section,
+  .app__section {
+    display: none;
   }
 }
 
@@ -63,6 +83,17 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+  }
+
+  .mobile__hidden {
+    display: none;
+  }
+
+  .warning,
+  .title__section,
+  .instructions__section,
+  .app__section {
+    display: block;
   }
 }
 

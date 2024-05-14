@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Server</title>
+    <title>MouseTrack | Mouse Input Performance Test</title>
   </head>
   <body>
     <header class="header container">
@@ -19,17 +19,12 @@
             d="M480-80q-116 0-198-82t-82-198v-240q0-116 82-198t198-82q116 0 198 82t82 198v240q0 116-82 198T480-80Zm40-520h160q0-72-45.5-127T520-796v196Zm-240 0h160v-196q-69 14-114.5 69T280-600Zm200 440q83 0 141.5-58.5T680-360v-160H280v160q0 83 58.5 141.5T480-160Zm0-360Zm40-80Zm-80 0Zm40 80Z"
           />
         </svg>
-        <a href="./index.html" class="logo__name">MouseTrack</a>
+        <a href="#" class="logo__name">MouseTrack</a>
       </div>
       <nav>
         <ul class="header__menu">
           <li class="header__item">
             <a href="./index.html" class="header__link">Home</a>
-          </li>
-          <li class="header__item">
-            <a href="./pages/attributions.html" class="header__link"
-              >Attributions</a
-            >
           </li>
         </ul>
       </nav>
@@ -64,19 +59,19 @@
         </p>
       </section>
 
-      <section class="container section">
+      <section class="app__section container section">
         <div class="app__settings">
           <form action="POST" class="settings__form">
-            <input type="checkbox" name="" id="wanthardwarecursor" checked/>
+            <input type="checkbox" name="" id="wanthardwarecursor" checked />
             <label for="wanthardwarecursor">Show hardware cursor</label>
 
-            <input type="checkbox" name="" id="useraftime" checked/>
+            <input type="checkbox" name="" id="useraftime" checked />
             <label for="useraftime">Use rAF time argument</label>
 
-            <input type="checkbox" name="" id="wantgraph" checked/>
+            <input type="checkbox" name="" id="wantgraph" checked />
             <label for="wantgraph">Graph</label>
 
-            <input type="checkbox" name="" id="wanteventnow" checked/>
+            <input type="checkbox" name="" id="wanteventnow" checked />
             <label for="wanteventnow">Override event time with now()</label>
 
             <input type="checkbox" name="" id="wantmousepath" />
@@ -86,7 +81,16 @@
 
         <div class="app__main">
           <div class="app__window">
-            <table class=grayborder cellpadding=0 cellspacing=0 border=0><tr><td><canvas id=can width=1200 height=400></canvas></td></tr></table>
+            <table
+              class="grayborder"
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+            >
+              <tr>
+                <td><canvas id="can" width="1200" height="400"></canvas></td>
+              </tr>
+            </table>
           </div>
           <div class="app__instructions">
             <p class="instructions__text">
@@ -94,14 +98,37 @@
             </p>
 
             <p class="instructions__text">
-              <span class="app__highlight">Blue line:</span> inter-mouse message times, best case being flat line. 8ms is typical for mice/Windows and laptop trackpads are usually around 10-12ms
+              <span class="app__highlight">Blue line:</span> inter-mouse message
+              times, best case being flat line. 8ms is typical for mice/Windows
+              and laptop trackpads are usually around 10-12ms
             </p>
 
             <p class="instructions__text">
-              <span class="app__highlight">Gray line:</span> mouse move message time offset from rAF time and vsync. The best case is a consistent sawtooth pattern.
+              <span class="app__highlight">Gray line:</span> mouse move message
+              time offset from rAF time and vsync. The best case is a consistent
+              sawtooth pattern.
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="mobile__hidden container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="44px"
+          viewBox="0 -960 960 960"
+          width="44px"
+          fill="#5f6368"
+          class="warning__icon"
+        >
+          <path
+            d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+          />
+        </svg>
+        <h1 class="mobile__text">This screen size is not suppported!</h1>
+        <p class="mobile__text">
+          Please use a larger screen size to use this site.
+        </p>
       </section>
     </main>
 
